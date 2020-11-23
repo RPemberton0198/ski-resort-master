@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Blue Spruce Lodge's website">
+  <meta name="author" content="">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <title>Blue Spruce Lodge</title>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT"> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/modern-business.css" rel="stylesheet">
+  <!-- Custom for index -->
+  <link href="./css/index.css" rel="stylesheet">
+  <!-- Custom for calendar -->
+  <link href="./vendor/monthly/css/monthly.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg  navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand mb-0" href="./">
+        <img src="./img/logo.png" alt="Blue Spruce's Logo" class="img-fluid align-middle">
+        <h2 class="d-none d-sm-inline-block m-0 align-middle">Blue Spruce Lodge</h2>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselHome" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselHome" data-slide-to="1"></li>
+        <li data-target="#carouselHome" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('img/index/slider-1.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Loren ipsum</h3>
+            <p class="text-center">Mi ipsum faucibus vitae aliquet nec!</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('img/index/slider-2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Non curabitur gravida</h3>
+            <p class="text-center">Arcu ac tortor dignissim convallis aenean. Id diam vel quam elementum.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('img/index/slider-3.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Varius duis at consectetur</h3>
+            <p class="text-center">Lorem donec massa sapien faucibus et.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container mt-lg-4 mt-2">
+
+    <!-- Weather and info -->
+    <div class="row">
+      <!--weather-->
+      <div class="col-sm-6">
+        <!-- Spinner -->
+        <div class="spinner-border primary-text weather-spinner" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <!-- Weather info -->
+        <div id="weather-container" class="container-fluid bg-white shadow-sharp py-3 rounded" style="display: none">
+          <div>
+            <span id="weather-time-date" class="primary-text"></span>
+            <h2 id="weather-location" class="mt-0"></h2></div>
+          <div class="weather-icon-temp">
+            <img id="weather-icon" src="" alt="weather-icon" class="weather-icon" style="margin-left: -10px;">
+            <strong id="weather-temperature" class="heading"></strong>
+          </div>
+          <div class="text-center">
+            <strong id="weather-feel"></strong>
+          </div>
+          <br>
+          <ul class="weather-items">
+            <!--weather extra details-->
+            <li>
+              <div id="weather-wind-speed" class="wind-line">
+                <svg id="weather-wind-direction" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" class="icon-wind-direction" style="transform: rotate(240deg);">
+                  <g fill="#48484a">
+                    <path d="M510.5,749.6c-14.9-9.9-38.1-9.9-53.1,1.7l-262,207.3c-14.9,11.6-21.6,6.6-14.9-11.6L474,48.1c5-16.6,14.9-18.2,21.6,0l325,898.7c6.6,16.6-1.7,23.2-14.9,11.6L510.5,749.6z"></path>
+                    <path d="M817.2,990c-8.3,0-16.6-3.3-26.5-9.9L497.2,769.5c-5-3.3-18.2-3.3-23.2,0L210.3,976.7c-19.9,16.6-41.5,14.9-51.4,0c-6.6-9.9-8.3-21.6-3.3-38.1L449.1,39.8C459,13.3,477.3,10,483.9,10c6.6,0,24.9,3.3,34.8,29.8l325,898.7c5,14.9,5,28.2-1.7,38.1C837.1,985,827.2,990,817.2,990z M485.6,716.4c14.9,0,28.2,5,39.8,11.6l255.4,182.4L485.6,92.9l-267,814.2l223.9-177.4C454.1,721.4,469,716.4,485.6,716.4z"></path>
+                  </g>
+                </svg>                 
+              </div>
+            </li>
+            <li id="weather-pressure" >
+              <svg width="96pt" height="96pt" viewBox="0 0 96 96" class="icon-pressure">
+                <g transform="translate(0,96) scale(0.100000,-0.100000)" fill="#48484a" stroke="none">
+                  <path d="M351 854 c-98 -35 -179 -108 -227 -202 -27 -53 -29 -65 -29 -172 0 -107 2 -119 29 -172 38 -75 104 -141 180 -181 58 -31 66 -32 176 -32 110 0 118 1 175 32 77 40 138 101 178 178 31 57 32 65 32 175 0 110 -1 118 -32 176 -40 76 -106 142 -181 179 -49 25 -71 29 -157 32 -73 2 -112 -1 -144 -13z m259 -80 c73 -34 126 -86 161 -159 24 -50 29 -73 29 -135 0 -62 -5 -85 -29 -135 -57 -119 -161 -185 -291 -185 -130 0 -234 66 -291 185 -24 50 -29 73 -29 135 0 130 66 234 185 291 82 40 184 41 265 3z">                 </path>
+                  <path d="M545 600 c-35 -35 -68 -60 -80 -60 -27 0 -45 -18 -45 -45 0 -33 -50 -75 -89 -75 -18 0 -41 -5 -53 -11 -20 -11 -20 -11 3 -35 12 -13 33 -24 46 -24 17 0 23 -6 23 -23 0 -13 10 -33 23 -45 30 -28 47 -13 47 43 0 32 6 47 28 68 15 15 37 27 48 27 26 0 44 18 44 44 0 12 26 47 60 81 l60 61 -28 27 -28 27 -59 -60z"></path>
+                </g>
+              </svg> 
+              
+            </li>
+            <li id="weather-humidity">
+              <span class="symbol">Humidity:&nbsp;</span>
+              
+            </li>
+            <li id="weather-uv">
+              <span class="symbol">UV index:&nbsp;</span>
+              
+            </li>
+            <li id="weather-dew">
+              <span class="symbol">Dew point:&nbsp;</span>
+              
+            </li>
+            <li id="weather-visibility">
+              <span class="symbol">Visibility:&nbsp;</span>
+              
+            </li>
+          </ul>    
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h1 class="text-center">Welcome</h1>        
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis. Ut morbi tincidunt augue interdum velit euismod. Sed vulputate mi sit amet. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Placerat orci nulla pellentesque dignissim. Viverra mauris in aliquam sem. Nisl suscipit adipiscing bibendum est ultricies integer. At imperdiet dui accumsan sit amet nulla facilisi. Viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas. Id consectetur purus ut faucibus pulvinar.</p>       
+      </div>            
+    </div>
+    <!-- /.row -->
+    
+    <!-- Calendar and news -->
+    <div class="row mt-2 mt-lg-4">
+
+      <!-- Calendar-->
+      <div class="col-sm-6">        
+        <h2 class="text-center">Events</h2>
+        <div id="calendar-events" class="monthly"></div>
+      </div>
+      <!-- News --> 
+      <div class="col-sm-6">
+        <h2 class="text-center">News</h2>    
+        <div id="news" class="news-list">   
+          <div class="card mb-2 news-item active shadow-sharp" data="0">
+            <img class="card-img-top" src="./img/index/news-0.jpg" alt="Christma's event picture">
+            <div class="card-body">
+              <h2 class="card-title">Holiday event!</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+              <a href="./news/holiday-event.html" class="btn btn-primary button">Read more &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on November 17, 2020
+            </div>
+          </div>    
+          <div class="card mb-2 news-item shadow-sharp" data="1">
+            <img class="card-img-top" src="./img/index/news-1.jpg" alt="XSport's athlete">
+            <div class="card-body">
+              <h2 class="card-title">XGames qualifiers</h2>
+              <p class="card-text">Quisque id diam vel quam elementum pulvinar etiam. Lacus laoreet non curabitur gravida arcu ac tortor. Ipsum nunc aliquet bibendum enim facilisis gravida neque!</p>
+              <a href="http://www.xgames.com/aspen/" target="blank" rel="noopener noreferrer" class="btn btn-primary primary-bg">Read more &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on November 10, 2020             
+            </div>
+          </div>
+          <div class="card mb-2 news-item shadow-sharp" data="2">
+            <img class="card-img-top" src="./img/index/news-2.png" alt="NSAA Logo">
+            <div class="card-body">
+              <h2 class="card-title">NSAA Commitment</h2>
+              <p class="card-text">The ski and snowboard industry values and prioritizes the health and safety of its guests, staff and local communities. We demonstrate this commitment to our stakeholders by implementing the following operating best practices for the 2020-21 winter season, scaled appropriately in response to the COVID-19 pandemic.</p>
+              <a href="https://nsaa.org/Webdocs/Resources/Coronavirus/Playbook/SkiWellBeWell_2020.pdf" target="blank" rel="noopener noreferrer" class="btn btn-primary primary-bg">Read more &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on November 1, 2020             
+            </div>
+          </div>        
+        </div>  
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item old">
+            <a id="btn-oldest-news" class="page-link" href="">&#8676;</a>
+          </li>
+          <li class="page-item old">
+            <a id="btn-older-news" class="page-link" href="">&larr; <span class="d-none d-lg-inline-block">Older</span> </a>
+          </li>
+          <li class="page-item disabled new">
+            <a id="btn-newer-news" class="page-link" href=""><span class="d-none d-lg-inline-block">Newer</span> &rarr;</a>
+          </li>
+          <li class="page-item disabled new">
+            <a id="btn-newest-news" class="page-link" href="">&#8677;</a>
+          </li>
+        </ul>
+
+      </div>  
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Blue Spruce Lodge 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendor/monthly/js/monthly.js"></script>
+  <!-- Custom js -->
+  <script src="./js/navigation.js"></script>
+  <script src="./js/index.js"></script>  
+</body>
+
+</html>

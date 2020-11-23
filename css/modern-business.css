@@ -1,0 +1,135 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template/modern-business)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+  background-color: #f2f2f2;
+  font-family: "Old Standard TT", Helvetica;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.carousel-item {
+  height: 40vh;
+  min-height: 150px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.primary-text {
+  color: #0077B6 !important;
+}
+
+.primary-bg {
+  background-color: #0077B6 !important;
+}
+
+
+/* Starts Navigation */
+.navbar {
+  font-family: Cabin, Arial;
+}
+
+.navbar,
+footer.bg-dark {
+  background-color: #0077B6 !important;
+  color: #FFFFFF;
+}
+
+
+.navbar-brand img {
+  max-width: 50px;
+  min-width: 50px;
+}
+
+/* Ends Navigation */
+
+/* STARTS Text */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cabin, Arial;
+  text-align: center;
+}
+
+/* ENDS Text */
+
+/* STARTS Buttons */
+.btn-primary,
+.page-item a.page-link {
+  background: linear-gradient(to bottom, #03045ecc, #03045e) !important;
+  color: #fff;
+  font-family: Cabin, Arial;
+}
+
+.btn-primary:hover,
+.page-item a.page-link:hover {
+  background:linear-gradient(to bottom, #0077B6cc, #0077B6) !important;
+} 
+
+.btn-primary {
+  border: 0;
+}
+
+.page-item a.page-link {
+  color: #ffff;
+  border: none;
+}
+
+/* Makes the button on Contact go full width when small break */
+@media all and (max-width:480px) {
+  #btn-send-message { 
+    width: 100%; 
+    display:block; 
+  }
+}   
+
+/* ENDS Buttons */
+
+/* STARTS Card */
+
+.card,
+.img-thumbnail {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.25), 
+              0 4px 4px rgba(0,0,0,0.20), 
+              0 8px 8px rgba(0,0,0,0.15), 
+              0 16px 16px rgba(0,0,0,0.10),
+              0 32px 32px rgba(0,0,0,0.05);
+}
+
+.card-text {
+  text-align:justify;
+}
+
+.card-footer {
+  font-size: 15px;
+}
+/* ENDS Card */
+
+/* STARTS special effects */
+
+.shadow-sharp {
+  box-shadow: 0 2px 2px rgba(0,0,0,0.25), 
+            0 4px 4px rgba(0,0,0,0.20), 
+            0 8px 8px rgba(0,0,0,0.15), 
+            0 16px 16px rgba(0,0,0,0.10),
+            0 32px 32px rgba(0,0,0,0.05);
+}
+
+/* ENDS special effects */
+
+/* STARTS News */
+.post-date {
+  border-bottom: 1px solid lightgray;
+  text-align: left;
+  font-size: 15px;
+}
+/* ENDS News */

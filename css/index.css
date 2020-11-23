@@ -1,0 +1,100 @@
+/* START Weather */
+#weather-container {
+    height: 100%;
+}
+
+#weather-container strong{
+    font-family: Cabin, Arial;
+}
+
+#weather-time {
+    font-size: 15px;
+}
+
+.weather-items {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 20px;
+}
+
+.weather-items li {
+    margin-right: 16pt;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.icon-wind-direction {
+	height: 8pt;
+}
+
+.icon-pressure {
+	height: 12pt;
+	width: auto;
+}
+
+.weather-icon-temp {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 16pt; 
+    margin-bottom: 16pt;
+}
+
+#weather-temperature {
+    font-size: 36px;
+    font-weight: bold;
+    
+}
+
+.weather-spinner {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -1rem;
+    margin-top: -1rem;
+}
+/* ENDS Weather */
+
+/* STARTS News Feed */
+.news-item {
+    display:none;
+    transition: ease 0.3s;
+}
+
+.news-item.active {
+    display: flex;
+}
+
+#btn-newest-news {
+    border-radius: 0 0.25rem 0.25rem 0;    
+}
+
+#btn-oldest-news {
+    border-radius: 0.25rem 0 0 0.25rem;    
+}
+
+/* ENDS News Feed */
+
+/* STARTS Events */
+.event-0 {
+    background-color: #0074D9 !important;
+}
+
+.event-1 {
+    background-color: #3D9970 !important;
+}
+
+.event-2 {
+    background-color: #39CCCC !important;
+}
+
+.event-3 {
+    background-color: #7FDBFF !important;
+}
+/* ENDS Events */
+
+
